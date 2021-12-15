@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/CamerasButton.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CamerasButton" type="Button" parent="."]
+margin_left = 59.0
+margin_top = 484.0
+margin_right = 960.0
+margin_bottom = 577.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 236.0
+margin_top = 95.0
+margin_right = 472.0
+margin_bottom = 135.0
+text = "Contorls"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="button_down" from="CamerasButton" to="CamerasButton" method="_on_CamerasButton_button_down"]
+[connection signal="mouse_entered" from="CamerasButton" to="CamerasButton" method="_on_CamerasButton_mouse_entered"]
