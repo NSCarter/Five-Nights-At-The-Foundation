@@ -10,9 +10,6 @@ margin_top = 484.0
 margin_right = 960.0
 margin_bottom = 577.0
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_left = 236.0
@@ -24,5 +21,5 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="button_down" from="ControlsButton" to="ControlsButton" method="_on_ControlsButton_button_down"]
 [connection signal="mouse_entered" from="ControlsButton" to="ControlsButton" method="_on_ControlsButton_mouse_entered"]
+[connection signal="mouse_exited" from="ControlsButton" to="ControlsButton" method="_on_ControlsButton_mouse_exited"]

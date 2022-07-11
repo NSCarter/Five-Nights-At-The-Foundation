@@ -1,19 +1,15 @@
 extends Button
 
+var left = false
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	print('here')
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	if (!Stats.night_started):
+		left = true
+		Stats.night_started = true
 
 func _on_CamerasButton_mouse_entered():
-	get_tree().change_scene("res://Scenes/Cameras.tscn")
+	if (left):
+		get_tree().change_scene("res://Scenes/Cameras.tscn")
+
+func _on_CamerasButton_mouse_exited():
+	left = true
