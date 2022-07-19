@@ -11,15 +11,5 @@ margin_right = 960.0
 margin_bottom = 577.0
 script = ExtResource( 1 )
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 236.0
-margin_top = 95.0
-margin_right = 472.0
-margin_bottom = 135.0
-text = "Contorls"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [connection signal="mouse_entered" from="CamerasButton" to="CamerasButton" method="_on_CamerasButton_mouse_entered"]
 [connection signal="mouse_exited" from="CamerasButton" to="CamerasButton" method="_on_CamerasButton_mouse_exited"]

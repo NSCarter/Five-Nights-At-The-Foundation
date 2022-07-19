@@ -11,15 +11,29 @@ margin_right = 960.0
 margin_bottom = 577.0
 script = ExtResource( 1 )
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 236.0
-margin_top = 95.0
-margin_right = 472.0
-margin_bottom = 135.0
-text = "Cameras"
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="CameraButtons" type="VBoxContainer" parent="."]
+margin_left = 38.3877
+margin_top = 37.7551
+margin_right = 232.388
+margin_bottom = 288.755
+size_flags_stretch_ratio = 0.0
+
+[node name="Cam 1" type="Button" parent="CameraButtons"]
+margin_right = 194.0
+margin_bottom = 20.0
+text = "Cam 1"
+
+[node name="Cam 2" type="Button" parent="CameraButtons"]
+margin_top = 24.0
+margin_right = 194.0
+margin_bottom = 44.0
+text = "Cam 2"
+
+[node name="Cam 3" type="Button" parent="CameraButtons"]
+margin_top = 48.0
+margin_right = 194.0
+margin_bottom = 68.0
+text = "Cam 3"
 
 [connection signal="mouse_entered" from="ControlsButton" to="ControlsButton" method="_on_ControlsButton_mouse_entered"]
 [connection signal="mouse_exited" from="ControlsButton" to="ControlsButton" method="_on_ControlsButton_mouse_exited"]
