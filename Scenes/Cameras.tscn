@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scripts/ControlsButton.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Cameras.gd" type="Script" id=2]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Control"]
+script = ExtResource( 2 )
 
 [node name="ControlsButton" type="Button" parent="."]
 margin_left = 59.0
@@ -29,11 +31,9 @@ margin_right = 194.0
 margin_bottom = 44.0
 text = "Cam 2"
 
-[node name="Cam 3" type="Button" parent="CameraButtons"]
-margin_top = 48.0
-margin_right = 194.0
-margin_bottom = 68.0
-text = "Cam 3"
+[node name="SelectedCam" type="Node2D" parent="."]
 
 [connection signal="mouse_entered" from="ControlsButton" to="ControlsButton" method="_on_ControlsButton_mouse_entered"]
 [connection signal="mouse_exited" from="ControlsButton" to="ControlsButton" method="_on_ControlsButton_mouse_exited"]
+[connection signal="pressed" from="CameraButtons/Cam 1" to="." method="_on_Cam_1_pressed"]
+[connection signal="pressed" from="CameraButtons/Cam 2" to="." method="_on_Cam_2_pressed"]
