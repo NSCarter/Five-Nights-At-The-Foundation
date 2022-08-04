@@ -2,12 +2,6 @@ extends Control
 
 func _ready():
 	change_camera(Stats.selected_cam)
-
-func _on_Cam_1_pressed():
-	change_camera("Cam 1")
-
-func _on_Cam_2_pressed():
-	change_camera("Cam 2")
 	
 func change_camera(name):
 	var cam = load("Scenes/%s.tscn" % name).instance()
