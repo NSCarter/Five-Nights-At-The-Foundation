@@ -12,6 +12,7 @@ func _ready():
 		
 		if button.text == Stats.selected_cam:
 			button.grab_focus()
+			change_camera(Stats.selected_cam)
 
 func change_camera(name):
 	var cam = load("Scenes/%s.tscn" % name).instance()
