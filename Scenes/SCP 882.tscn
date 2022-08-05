@@ -1,0 +1,10 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 340.0
+margin_top = 195.0
+margin_right = 844.0
+margin_bottom = 463.0
+text = "SCP 882"
