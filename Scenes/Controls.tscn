@@ -3,7 +3,7 @@
 [ext_resource path="res://Scripts/CamerasButton.gd" type="Script" id=1]
 [ext_resource path="res://Assests/Images/AcidLeverDown.png" type="Texture" id=2]
 [ext_resource path="res://Assests/Images/AcidLeverUp.png" type="Texture" id=3]
-[ext_resource path="res://Scenes/Controls.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/Controls.gd" type="Script" id=4]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 4 )
