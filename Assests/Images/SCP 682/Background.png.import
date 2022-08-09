@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/AcidLeverDown.png-e245c2fe8a30bd3fc69c989f43696369.stex"
+path="res://.import/Background.png-54d28a906c0eceb87427cd0f9d6e1b25.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assests/Images/AcidLeverDown.png"
-dest_files=[ "res://.import/AcidLeverDown.png-e245c2fe8a30bd3fc69c989f43696369.stex" ]
+source_file="res://Assests/Images/SCP 682/Background.png"
+dest_files=[ "res://.import/Background.png-54d28a906c0eceb87427cd0f9d6e1b25.stex" ]
 
 [params]
 
