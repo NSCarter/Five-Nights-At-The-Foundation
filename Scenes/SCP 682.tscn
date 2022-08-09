@@ -1,10 +1,19 @@
-[gd_scene format=2]
+[gd_scene load_steps=4 format=2]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource path="res://Assests/Images/SCP 682/Acid.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Acid.gd" type="Script" id=2]
+[ext_resource path="res://Assests/Images/SCP 682/Background.png" type="Texture" id=3]
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 252.735
-margin_top = 129.939
-margin_right = 880.735
-margin_bottom = 333.939
-text = "SCP 682"
+[node name="SCP 682" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 3 )
+
+[node name="Acid" type="TextureRect" parent="."]
+margin_top = 200.0
+margin_right = 1024.0
+margin_bottom = 800.0
+texture = ExtResource( 1 )
+script = ExtResource( 2 )

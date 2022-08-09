@@ -5,6 +5,8 @@
 
 [node name="Node2D" type="Control"]
 
+[node name="SelectedCam" type="Node2D" parent="."]
+
 [node name="ControlsButton" type="Button" parent="."]
 margin_left = 59.0
 margin_top = 484.0
@@ -20,8 +22,6 @@ margin_bottom = 288.755
 size_flags_stretch_ratio = 0.0
 custom_constants/separation = 10
 script = ExtResource( 3 )
-
-[node name="SelectedCam" type="Node2D" parent="."]
 
 [connection signal="mouse_entered" from="ControlsButton" to="ControlsButton" method="_on_ControlsButton_mouse_entered"]
 [connection signal="mouse_exited" from="ControlsButton" to="ControlsButton" method="_on_ControlsButton_mouse_exited"]
