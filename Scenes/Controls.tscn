@@ -1,15 +1,16 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Scripts/CamerasButton.gd" type="Script" id=1]
 [ext_resource path="res://Assests/Images/SCP 682/AcidLeverDown.png" type="Texture" id=2]
 [ext_resource path="res://Assests/Images/SCP 682/AcidLeverUp.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/Controls.gd" type="Script" id=4]
 [ext_resource path="res://Scripts/AcidLever.gd" type="Script" id=5]
-[ext_resource path="res://Assests/Images/SCP 017/FuseBoxOpened.png" type="Texture" id=6]
+[ext_resource path="res://Assests/Images/SCP 017/FuseBoxClosed.png" type="Texture" id=6]
 [ext_resource path="res://Assests/Images/SCP 017/Fuse3.png" type="Texture" id=7]
 [ext_resource path="res://Assests/Images/SCP 017/Fuse1.png" type="Texture" id=8]
 [ext_resource path="res://Assests/Images/SCP 017/Fuse4.png" type="Texture" id=9]
 [ext_resource path="res://Assests/Images/SCP 017/Fuse2.png" type="Texture" id=10]
+[ext_resource path="res://Scenes/FuseBox.gd" type="Script" id=11]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 4 )
@@ -36,8 +37,10 @@ margin_top = 252.0
 margin_right = 222.0
 margin_bottom = 420.0
 texture_normal = ExtResource( 6 )
+script = ExtResource( 11 )
 
 [node name="Fuse1" type="TextureButton" parent="FuseBox"]
+visible = false
 margin_left = 39.7806
 margin_top = 12.449
 margin_right = 78.7806
@@ -45,6 +48,7 @@ margin_bottom = 51.449
 texture_normal = ExtResource( 8 )
 
 [node name="Fuse2" type="TextureButton" parent="FuseBox"]
+visible = false
 margin_left = 39.7806
 margin_top = 62.0
 margin_right = 78.7806
@@ -52,6 +56,7 @@ margin_bottom = 101.0
 texture_normal = ExtResource( 10 )
 
 [node name="Fuse3" type="TextureButton" parent="FuseBox"]
+visible = false
 margin_left = 40.7245
 margin_top = 107.775
 margin_right = 79.7245
@@ -59,6 +64,7 @@ margin_bottom = 146.775
 texture_normal = ExtResource( 7 )
 
 [node name="Fuse4" type="TextureButton" parent="FuseBox"]
+visible = false
 margin_left = 40.7245
 margin_top = 152.607
 margin_right = 79.7245
@@ -69,3 +75,4 @@ texture_normal = ExtResource( 9 )
 [connection signal="mouse_exited" from="CamerasButton" to="CamerasButton" method="_on_CamerasButton_mouse_exited"]
 [connection signal="button_down" from="AcidLever" to="AcidLever" method="_on_AcidLever_button_down"]
 [connection signal="button_up" from="AcidLever" to="AcidLever" method="_on_AcidLever_button_up"]
+[connection signal="pressed" from="FuseBox" to="FuseBox" method="_on_FuseBox_pressed"]
