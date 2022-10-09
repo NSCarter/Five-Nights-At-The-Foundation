@@ -76,3 +76,7 @@ texture_normal = ExtResource( 9 )
 [connection signal="button_down" from="AcidLever" to="AcidLever" method="_on_AcidLever_button_down"]
 [connection signal="button_up" from="AcidLever" to="AcidLever" method="_on_AcidLever_button_up"]
 [connection signal="pressed" from="FuseBox" to="FuseBox" method="_on_FuseBox_pressed"]
+[connection signal="pressed" from="FuseBox/Fuse1" to="FuseBox" method="_on_Fuse1_pressed"]
+[connection signal="pressed" from="FuseBox/Fuse2" to="FuseBox" method="_on_Fuse2_pressed"]
+[connection signal="pressed" from="FuseBox/Fuse3" to="FuseBox" method="_on_Fuse3_pressed"]
+[connection signal="pressed" from="FuseBox/Fuse4" to="FuseBox" method="_on_Fuse4_pressed"]
