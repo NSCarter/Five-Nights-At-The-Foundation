@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Scripts/CamerasButton.gd" type="Script" id=1]
 [ext_resource path="res://Assests/Images/SCP 682/AcidLeverDown.png" type="Texture" id=2]
@@ -13,6 +13,10 @@
 [ext_resource path="res://Scenes/FuseBox.gd" type="Script" id=11]
 [ext_resource path="res://Assests/Images/SCP 017/DrawerClosed.png" type="Texture" id=12]
 [ext_resource path="res://Scenes/FuseDrawer.gd" type="Script" id=13]
+[ext_resource path="res://Assests/Images/SCP 017/10AFuse.png" type="Texture" id=14]
+[ext_resource path="res://Assests/Images/SCP 017/5AFuse.png" type="Texture" id=15]
+[ext_resource path="res://Assests/Images/SCP 017/15AFuse.png" type="Texture" id=16]
+[ext_resource path="res://Assests/Images/SCP 017/20AFuse.png" type="Texture" id=17]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 4 )
@@ -81,6 +85,42 @@ margin_bottom = 452.015
 texture_normal = ExtResource( 12 )
 script = ExtResource( 13 )
 
+[node name="5AFuse" type="TextureButton" parent="FuseDrawer"]
+visible = false
+margin_left = 8.4949
+margin_top = 4.71938
+margin_right = 128.495
+margin_bottom = 44.7194
+rect_pivot_offset = Vector2( -475.641, 12.434 )
+texture_normal = ExtResource( 15 )
+
+[node name="10AFuse" type="TextureButton" parent="FuseDrawer"]
+visible = false
+margin_left = 22.653
+margin_top = 50.0254
+margin_right = 142.653
+margin_bottom = 90.0254
+rect_pivot_offset = Vector2( -475.641, 12.434 )
+texture_normal = ExtResource( 14 )
+
+[node name="15AFuse" type="TextureButton" parent="FuseDrawer"]
+visible = false
+margin_left = 7.55103
+margin_top = 95.3316
+margin_right = 127.551
+margin_bottom = 135.332
+rect_pivot_offset = Vector2( -475.641, 12.434 )
+texture_normal = ExtResource( 16 )
+
+[node name="20AFuse" type="TextureButton" parent="FuseDrawer"]
+visible = false
+margin_left = 20.7653
+margin_top = 145.357
+margin_right = 140.765
+margin_bottom = 185.357
+rect_pivot_offset = Vector2( -475.641, 12.434 )
+texture_normal = ExtResource( 17 )
+
 [connection signal="mouse_entered" from="CamerasButton" to="CamerasButton" method="_on_CamerasButton_mouse_entered"]
 [connection signal="mouse_exited" from="CamerasButton" to="CamerasButton" method="_on_CamerasButton_mouse_exited"]
 [connection signal="button_down" from="AcidLever" to="AcidLever" method="_on_AcidLever_button_down"]
@@ -91,3 +131,7 @@ script = ExtResource( 13 )
 [connection signal="pressed" from="FuseBox/Fuse3" to="FuseBox" method="_on_Fuse3_pressed"]
 [connection signal="pressed" from="FuseBox/Fuse4" to="FuseBox" method="_on_Fuse4_pressed"]
 [connection signal="pressed" from="FuseDrawer" to="FuseDrawer" method="_on_FuseDrawer_pressed"]
+[connection signal="pressed" from="FuseDrawer/5AFuse" to="FuseDrawer" method="_on_5AFuse_pressed"]
+[connection signal="pressed" from="FuseDrawer/10AFuse" to="FuseDrawer" method="_on_10AFuse_pressed"]
+[connection signal="pressed" from="FuseDrawer/15AFuse" to="FuseDrawer" method="_on_15AFuse_pressed"]
+[connection signal="pressed" from="FuseDrawer/20AFuse" to="FuseDrawer" method="_on_20AFuse_pressed"]

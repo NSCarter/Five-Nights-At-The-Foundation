@@ -9,3 +9,5 @@ var cameras = ["SCP 682", "SCP 017", "SCP 882"]
 var acid_pos = 200
 
 var light_status = [true, true, true, true]
+
+var hand = ""
