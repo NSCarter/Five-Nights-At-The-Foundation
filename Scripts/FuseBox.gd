@@ -1,6 +1,10 @@
 extends TextureButton
 
 var open = false
+var fuse1 = true
+var fuse2 = true
+var fuse3 = true
+var fuse4 = true
 
 func _on_FuseBox_pressed():
 	if open:
@@ -20,20 +24,28 @@ func _on_FuseBox_pressed():
 
 
 func _on_Fuse1_pressed():
-	fuse_pressed($Fuse1)
+	if (fuse1):
+		fuse_removed($Fuse1)
+		fuse1 = false
+	else:
+		if (Stats.hand == "15AFuse"):
+			$Fuse1.texture_normal = load("res://Assests/Images/SCP 017/Fuse1.png")
 
 
 func _on_Fuse2_pressed():
-	fuse_pressed($Fuse2)
+	fuse_removed($Fuse2)
 
 
 func _on_Fuse3_pressed():
-	fuse_pressed($Fuse3)
+	fuse_removed($Fuse3)
 
 
 func _on_Fuse4_pressed():
-	fuse_pressed($Fuse4)
+	fuse_removed($Fuse4)
 
 
-func fuse_pressed(fuse):
+func fuse_removed(fuse):
+	fuse.texture_normal = load("res://Assests/Images/SCP 017/FuseEmpty.png")
+	
+func fuse_replaced(fuse):
 	fuse.texture_normal = load("res://Assests/Images/SCP 017/FuseEmpty.png")

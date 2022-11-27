@@ -11,3 +11,8 @@ var acid_pos = 200
 var light_status = [true, true, true, true]
 
 var hand = ""
+
+var fuses = [Fuse.new("res://Assests/Images/SCP 017/LightOn.png",0,0),
+			 Fuse.new("res://Assests/Images/SCP 017/LightOn.png",512,0),
+			 Fuse.new("res://Assests/Images/SCP 017/LightOn.png",0,300),
+			 Fuse.new("res://Assests/Images/SCP 017/LightOn.png",512,300)]

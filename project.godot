@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node",
+"class": "Fuse",
+"language": "GDScript",
+"path": "res://Scripts/Fuse.gd"
+} ]
+_global_script_class_icons={
+"Fuse": ""
+}
+
 [application]
 
 config/name="FNAF-SCP"

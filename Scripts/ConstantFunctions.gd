@@ -13,6 +13,6 @@ func _process(delta):
 	if (Stats.acid_pos > acid_min_line):
 		print("You lose :(")
 		
-	for i in range(Stats.light_status.size()):
+	for i in 4:
 		if (rng.randi_range(0, 5000) == 1):
-			Stats.light_status[i] = false
+			Stats.fuses[i].status = false
