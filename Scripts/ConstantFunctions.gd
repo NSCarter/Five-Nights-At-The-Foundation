@@ -15,4 +15,4 @@ func _process(delta):
 		
 	for i in 4:
 		if (rng.randi_range(0, 5000) == 1):
-			Stats.fuses[i].status = false
+			Stats.lights[i].status = false

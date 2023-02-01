@@ -13,9 +13,15 @@ _global_script_classes=[ {
 "class": "Fuse",
 "language": "GDScript",
 "path": "res://Scripts/Fuse.gd"
+}, {
+"base": "Node",
+"class": "LightCamera",
+"language": "GDScript",
+"path": "res://Scripts/LightCamera.gd"
 } ]
 _global_script_class_icons={
-"Fuse": ""
+"Fuse": "",
+"LightCamera": ""
 }
 
 [application]

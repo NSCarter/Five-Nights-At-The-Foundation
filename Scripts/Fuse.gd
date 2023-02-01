@@ -2,16 +2,18 @@ extends Node
 
 class_name Fuse
 
-var textureOn: String
-var textureOff: String
+var texture: String
+var textureEmpty: String
 var posX: int
 var posY: int
 var status: bool
-var light: TextureRect
+var node: TextureButton
+var light: LightCamera
 
-func _init(texture:String, posX:int, posY:int):
-	self.textureOn = texture
-	self.textureOff = "res://Assests/Images/SCP 017/LightOff.png"
+func _init(texture:String, posX:int, posY:int, light):
+	self.texture = texture
+	self.textureEmpty = "res://Assests/Images/SCP 017/FuseEmpty.png"
 	self.posX = posX
 	self.posY = posY
+	self.light = light
 	status = true
