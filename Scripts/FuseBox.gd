@@ -34,6 +34,9 @@ func _on_Fuse_pressed(fuse):
 func fuse_removed(fuse):
 	fuse.node.texture_normal = load(fuse.textureEmpty)
 	fuse.status = false
+	fuse.light.status = false
+	
+	fuse.light.check_broken_lights()
 
 func fuse_replaced(fuse):
 	if (Stats.hand == ""):

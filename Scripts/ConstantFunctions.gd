@@ -17,10 +17,4 @@ func _process(delta):
 		if (rng.randi_range(0, 5000) == 1):
 			Stats.lights[i].status = false
 			
-			var broken_lights = 0
-			for light in Stats.lights:
-				if not light.status:
-					broken_lights += 1
-					
-			if broken_lights >= 3:
-				print("You lose :(")
+			Stats.lights[i].check_broken_lights()
