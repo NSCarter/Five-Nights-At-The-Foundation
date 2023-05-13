@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dp7bwormjpik0"
-path="res://.godot/imported/Acid.png-74083dfb6393154de625f6555fe2bcdf.ctex"
+uid="uid://chp23vqeuxn3c"
+path="res://.godot/imported/LightOff.png-d62b0ca76299ab4503cab3db16e1bf54.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assests/Images/SCP 682/Acid.png"
-dest_files=["res://.godot/imported/Acid.png-74083dfb6393154de625f6555fe2bcdf.ctex"]
+source_file="res://Assests/Images/SCP 017/LightOff.png"
+dest_files=["res://.godot/imported/LightOff.png-d62b0ca76299ab4503cab3db16e1bf54.ctex"]
 
 [params]
 

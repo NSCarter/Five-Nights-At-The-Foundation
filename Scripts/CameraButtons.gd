@@ -4,9 +4,9 @@ func _ready():
 	for i in range(Stats.cameras.size()):
 		var button = Button.new()
 		button.set_size(Vector2(125, 40))
-		button.rect_min_size = Vector2(0, 40)
+		button.custom_minimum_size = Vector2(0, 40)
 		button.text = Stats.cameras[i]
-		button.connect("pressed", self, "change_camera", [Stats.cameras[i]])
+		button.connect("pressed",Callable(self,"change_camera").bind(Stats.cameras[i]))
 		button.show()
 		add_child(button)
 		
@@ -15,7 +15,7 @@ func _ready():
 			change_camera(Stats.selected_cam)
 
 func change_camera(name):
-	var cam = load("Scenes/%s.tscn" % name).instance()
+	var cam = load("Scenes/%s.tscn" % name).instantiate()
 	remove_child_node()
 	$"../SelectedCam".add_child(cam)
 	Stats.selected_cam = name

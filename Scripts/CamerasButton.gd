@@ -9,7 +9,7 @@ func _ready():
 
 func _on_CamerasButton_mouse_entered():
 	if (left):
-		get_tree().change_scene("res://Scenes/Cameras.tscn")
+		get_tree().change_scene_to_file("res://Scenes/Cameras.tscn")
 
 func _on_CamerasButton_mouse_exited():
 	left = true

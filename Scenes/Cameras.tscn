@@ -1,27 +1,30 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=3 format=3 uid="uid://cgusuind4ixro"]
 
-[ext_resource path="res://Scripts/ControlsButton.gd" type="Script" id=1]
-[ext_resource path="res://Scripts/CameraButtons.gd" type="Script" id=3]
+[ext_resource type="Script" path="res://Scripts/ControlsButton.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/CameraButtons.gd" id="3"]
 
 [node name="Node2D" type="Control"]
+layout_mode = 3
+anchors_preset = 0
 
 [node name="SelectedCam" type="Node2D" parent="."]
 
 [node name="ControlsButton" type="Button" parent="."]
-margin_left = 59.0
-margin_top = 484.0
-margin_right = 960.0
-margin_bottom = 577.0
-script = ExtResource( 1 )
+layout_mode = 0
+offset_left = 59.0
+offset_top = 484.0
+offset_right = 960.0
+offset_bottom = 577.0
+script = ExtResource("1")
 
 [node name="CameraButtons" type="VBoxContainer" parent="."]
-margin_left = 38.3877
-margin_top = 37.7551
-margin_right = 163.388
-margin_bottom = 288.755
+layout_mode = 0
+offset_left = 38.3877
+offset_top = 37.7551
+offset_right = 163.388
+offset_bottom = 288.755
 size_flags_stretch_ratio = 0.0
-custom_constants/separation = 10
-script = ExtResource( 3 )
+script = ExtResource("3")
 
 [connection signal="mouse_entered" from="ControlsButton" to="ControlsButton" method="_on_ControlsButton_mouse_entered"]
 [connection signal="mouse_exited" from="ControlsButton" to="ControlsButton" method="_on_ControlsButton_mouse_exited"]

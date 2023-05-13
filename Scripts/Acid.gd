@@ -1,4 +1,4 @@
 extends TextureRect
 
 func _ready():
-	self.rect_position.y = Stats.acid_pos
+	self.position.y = Stats.acid_pos

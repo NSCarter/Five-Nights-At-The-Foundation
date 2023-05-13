@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dp7bwormjpik0"
-path="res://.godot/imported/Acid.png-74083dfb6393154de625f6555fe2bcdf.ctex"
+uid="uid://bwdharptx3fgg"
+path="res://.godot/imported/DrawerOpened.png-54d384d2f9ebb21933e0faa80d7d0b65.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assests/Images/SCP 682/Acid.png"
-dest_files=["res://.godot/imported/Acid.png-74083dfb6393154de625f6555fe2bcdf.ctex"]
+source_file="res://Assests/Images/SCP 017/DrawerOpened.png"
+dest_files=["res://.godot/imported/DrawerOpened.png-54d384d2f9ebb21933e0faa80d7d0b65.ctex"]
 
 [params]
 
