@@ -1,41 +1,38 @@
 extends TextureButton
 
-var open = false
-
-func _ready():
-	if self.pressed:
-		self.texture_normal = load("res://Assests/Images/SCP 017/FuseBoxOpened.png")
-	else:
-		self.texture_normal = load("res://Assests/Images/SCP 017/FuseBoxClosed.png")
-
 func _on_FuseBox_pressed():
-	if open:
-		self.texture_normal = load("res://Assests/Images/SCP 017/FuseBoxClosed.png")
-		open = false
+	if Stats.fuseBoxOpen:
+		closeFuseBox()
 	else:
-		self.texture_normal = load("res://Assests/Images/SCP 017/FuseBoxOpened.png")
-		open = true
+		openFuseBox()
 		
-		for i in 4:
-			var node = TextureButton.new()
-			var fuse = Stats.fuses[i]
-			node.position.x = fuse.posX
-			node.position.y = fuse.posY
-			node.connect("pressed",Callable(self,"_on_Fuse_pressed").bind(fuse))
-			
-			if fuse.status:
-				node.texture_normal = load(fuse.texture)
-			else:
-				node.texture_normal = load(fuse.textureEmpty)
-			fuse.node = node
-			self.add_child(node)
+	Stats.fuseBoxOpen = !Stats.fuseBoxOpen
+
+func openFuseBox():
+	self.texture_normal = load("res://Assests/Images/SCP 017/FuseBoxOpened.png")
+	
+	for i in 4:
+		var node = TextureButton.new()
+		var fuse = Stats.fuses[i]
+		node.position.x = fuse.posX
+		node.position.y = fuse.posY
+		node.connect("pressed",Callable(self,"_on_Fuse_pressed").bind(fuse))
 		
+		if fuse.status:
+			node.texture_normal = load(fuse.texture)
+		else:
+			node.texture_normal = load(fuse.textureEmpty)
+		fuse.node = node
+		self.add_child(node)
+		
+func closeFuseBox():
+	self.texture_normal = load("res://Assests/Images/SCP 017/FuseBoxClosed.png")
+
 func _on_Fuse_pressed(fuse):
 	if (fuse.status):
 		fuse_removed(fuse)
 	else:
 		fuse_replaced(fuse)
-
 
 func fuse_removed(fuse):
 	fuse.node.texture_normal = load(fuse.textureEmpty)

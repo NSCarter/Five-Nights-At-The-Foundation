@@ -10,6 +10,9 @@ var acid_pos = 200
 
 var hand = ""
 
+var fuseBoxOpen = false
+var drawerOpen = false
+
 var lights = [LightCamera.new("res://Assests/Images/SCP 017/LightOn.png",0,0),
 				LightCamera.new("res://Assests/Images/SCP 017/LightOn.png",512,0),
 				LightCamera.new("res://Assests/Images/SCP 017/LightOn.png",0,300),
