@@ -1,0 +1,47 @@
+2a60927148abd1d33b818b535e306557
+::res://::1683969506
+default_env.tres::Environment::-1::1678647224::0::1::::<><>::
+icon.png::CompressedTexture2D::881844148058150528::1625064964::1678647376::1::::<><>::
+::res://Assests/::1660074859
+::res://Assests/Images/::1660246883
+::res://Assests/Images/SCP 017/::1678647377
+5AFuse.png::CompressedTexture2D::3681542365096214425::1667683092::1678647377::1::::<><>::
+10AFuse.png::CompressedTexture2D::3767198727844832186::1667683165::1678647377::1::::<><>::
+15AFuse.png::CompressedTexture2D::3063635321369877781::1667683200::1678647377::1::::<><>::
+20AFuse.png::CompressedTexture2D::3112941796454363025::1667683236::1678647377::1::::<><>::
+DrawerClosed.png::CompressedTexture2D::1902565075439285819::1667424390::1678647377::1::::<><>::
+DrawerOpened.png::CompressedTexture2D::3937194312905492054::1667424431::1678647377::1::::<><>::
+Fuse1.png::CompressedTexture2D::7393355546189438379::1663157618::1678647377::1::::<><>::
+Fuse2.png::CompressedTexture2D::1468990142301870496::1663157653::1678647377::1::::<><>::
+Fuse3.png::CompressedTexture2D::3067192333433082175::1663157684::1678647377::1::::<><>::
+Fuse4.png::CompressedTexture2D::1313622150301066824::1663174556::1678647377::1::::<><>::
+FuseBoxClosed.png::CompressedTexture2D::2216846113100355039::1661965076::1678647377::1::::<><>::
+FuseBoxOpened.png::CompressedTexture2D::5041331927869047804::1663157237::1678647376::1::::<><>::
+FuseEmpty.png::CompressedTexture2D::4076624073938742177::1663157492::1678647376::1::::<><>::
+LightOff.png::CompressedTexture2D::5296819428113969126::1660246928::1678647377::1::::<><>::
+LightOn.png::CompressedTexture2D::6421899396731102067::1660246911::1678647376::1::::<><>::
+::res://Assests/Images/SCP 682/::1678647377
+Acid.png::CompressedTexture2D::8278255560384804309::1660074859::1678647376::1::::<><>::
+AcidLeverDown.png::CompressedTexture2D::977540482474809380::1660074859::1678647376::1::::<><>::
+AcidLeverUp.png::CompressedTexture2D::2090377564191295::1660074859::1678647376::1::::<><>::
+Background.png::CompressedTexture2D::260085592007955227::1660074859::1678647377::1::::<><>::
+::res://Scenes/::1677186221
+Cameras.tscn::PackedScene::-1::1678647224::0::1::::<><>::res://Scripts/ControlsButton.gd<>res://Scripts/CameraButtons.gd
+Controls.tscn::PackedScene::-1::1678647224::0::1::::<><>::res://Scripts/CamerasButton.gd<>res://Assests/Images/SCP 682/AcidLeverDown.png<>res://Assests/Images/SCP 682/AcidLeverUp.png<>res://Scripts/Controls.gd<>res://Scripts/AcidLever.gd<>res://Assests/Images/SCP 017/FuseBoxClosed.png<>res://Scripts/FuseBox.gd<>res://Assests/Images/SCP 017/DrawerClosed.png<>res://Scripts/FuseDrawer.gd<>res://Assests/Images/SCP 017/10AFuse.png<>res://Assests/Images/SCP 017/5AFuse.png<>res://Assests/Images/SCP 017/15AFuse.png<>res://Assests/Images/SCP 017/20AFuse.png
+SCP 017.tscn::PackedScene::-1::1678647224::0::1::::<><>::res://Scripts/SCP 017.gd
+SCP 682.tscn::PackedScene::-1::1678647224::0::1::::<><>::res://Assests/Images/SCP 682/Acid.png<>res://Scripts/Acid.gd<>res://Assests/Images/SCP 682/Background.png
+SCP 882.tscn::PackedScene::-1::1678647224::0::1::::<><>::
+::res://Scripts/::1677186165
+Acid.gd::GDScript::-1::1678647224::0::1::::<>TextureRect<>::
+AcidLever.gd::GDScript::-1::1678647224::0::1::::<>TextureButton<>::
+CameraButtons.gd::GDScript::-1::1678647224::0::1::::<>VBoxContainer<>::
+CamerasButton.gd::GDScript::-1::1678647224::0::1::::<>Button<>::
+ConstantFunctions.gd::GDScript::-1::1678647224::0::1::::<>Node<>::
+Controls.gd::GDScript::-1::1678647224::0::1::::<>Node2D<>::
+ControlsButton.gd::GDScript::-1::1678647224::0::1::::<>Button<>::
+Fuse.gd::GDScript::-1::1678647224::0::1::::Fuse<>Node<>::
+FuseBox.gd::GDScript::-1::1678647224::0::1::::<>TextureButton<>::
+FuseDrawer.gd::GDScript::-1::1678647224::0::1::::<>TextureButton<>::
+LightCamera.gd::GDScript::-1::1678647224::0::1::::LightCamera<>Node<>::
+SCP 017.gd::GDScript::-1::1678647224::0::1::::<>Node2D<>::
+Stats.gd::GDScript::-1::1678647224::0::1::::<>Node<>::

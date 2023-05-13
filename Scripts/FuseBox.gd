@@ -2,6 +2,12 @@ extends TextureButton
 
 var open = false
 
+func _ready():
+	if self.pressed:
+		self.texture_normal = load("res://Assests/Images/SCP 017/FuseBoxOpened.png")
+	else:
+		self.texture_normal = load("res://Assests/Images/SCP 017/FuseBoxClosed.png")
+
 func _on_FuseBox_pressed():
 	if open:
 		self.texture_normal = load("res://Assests/Images/SCP 017/FuseBoxClosed.png")
@@ -13,9 +19,9 @@ func _on_FuseBox_pressed():
 		for i in 4:
 			var node = TextureButton.new()
 			var fuse = Stats.fuses[i]
-			node.rect_position.x = fuse.posX
-			node.rect_position.y = fuse.posY
-			node.connect("pressed", self, "_on_Fuse_pressed", [fuse])
+			node.position.x = fuse.posX
+			node.position.y = fuse.posY
+			node.connect("pressed",Callable(self,"_on_Fuse_pressed").bind(fuse))
 			
 			if fuse.status:
 				node.texture_normal = load(fuse.texture)

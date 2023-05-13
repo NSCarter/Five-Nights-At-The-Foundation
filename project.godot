@@ -6,28 +6,13 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
-
-_global_script_classes=[ {
-"base": "Node",
-"class": "Fuse",
-"language": "GDScript",
-"path": "res://Scripts/Fuse.gd"
-}, {
-"base": "Node",
-"class": "LightCamera",
-"language": "GDScript",
-"path": "res://Scripts/LightCamera.gd"
-} ]
-_global_script_class_icons={
-"Fuse": "",
-"LightCamera": ""
-}
+config_version=5
 
 [application]
 
 config/name="FNAF-SCP"
 run/main_scene="res://Scenes/Controls.tscn"
+config/features=PackedStringArray("4.0")
 config/icon="res://icon.png"
 
 [autoload]
@@ -37,8 +22,9 @@ ConstantFunctions="*res://Scripts/ConstantFunctions.gd"
 
 [display]
 
-window/stretch/mode="2d"
-window/stretch/aspect="keep"
+window/size/viewport_width=1024
+window/size/viewport_height=600
+window/stretch/mode="canvas_items"
 
 [physics]
 
@@ -46,4 +32,4 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
-environment/default_environment="res://default_env.tres"
+environment/defaults/default_environment="res://default_env.tres"

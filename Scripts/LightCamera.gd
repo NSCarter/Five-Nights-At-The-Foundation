@@ -9,7 +9,7 @@ var posY: int
 var status: bool
 var node: TextureRect
 
-func _init(texture:String, posX:int, posY:int):
+func _init(texture:String,posX:int,posY:int):
 	self.textureOn = texture
 	self.textureOff = "res://Assests/Images/SCP 017/LightOff.png"
 	self.posX = posX

@@ -1,0 +1,7 @@
+res://default_env.tres
+res://Scenes/Controls.tscn
+res://Scripts/Stats.gd
+res://Scripts/AcidLever.gd
+res://Scenes/Cameras.tscn
+res://Scripts/CameraButtons.gd
+res://Scenes/SCP 017.tscn
