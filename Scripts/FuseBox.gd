@@ -27,6 +27,10 @@ func openFuseBox():
 		
 func closeFuseBox():
 	self.texture_normal = load("res://Assests/Images/SCP 017/FuseBoxClosed.png")
+	
+	for i in self.get_children():
+		self.remove_child(i)
+		i.queue_free()
 
 func _on_Fuse_pressed(fuse):
 	if (fuse.status):
