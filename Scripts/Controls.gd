@@ -11,3 +11,5 @@ func _ready():
 			$FuseDrawer.openDrawer()
 		if Stats.fuseBoxOpen:
 			$FuseBox.openFuseBox()
+	if not("SCP 882" in Stats.cameras):
+		$DialBase.visible = false

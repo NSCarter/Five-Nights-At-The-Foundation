@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://brpepnootf6mt"]
+[gd_scene load_steps=18 format=3 uid="uid://brpepnootf6mt"]
 
 [ext_resource type="Script" path="res://Scripts/CamerasButton.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://n6r7i7t38qjk" path="res://Assests/Images/SCP 682/AcidLeverDown.png" id="2"]
@@ -10,9 +10,15 @@
 [ext_resource type="Texture2D" uid="uid://2du767wyr1w6" path="res://Assests/Images/SCP 017/DrawerClosed.png" id="12"]
 [ext_resource type="Script" path="res://Scripts/FuseDrawer.gd" id="13"]
 [ext_resource type="Texture2D" uid="uid://btw4hh3d3n0y5" path="res://Assests/Images/SCP 017/10AFuse.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://caskthudi3s4k" path="res://Assests/Images/SCP 882/DialBase.png" id="14_aab6k"]
 [ext_resource type="Texture2D" uid="uid://bspmp2nmu0o2d" path="res://Assests/Images/SCP 017/5AFuse.png" id="15"]
+[ext_resource type="Script" path="res://Scripts/Dial.gd" id="15_0t3l6"]
+[ext_resource type="Texture2D" uid="uid://ovm3ypt8n1u5" path="res://Assests/Images/SCP 882/Dial.png" id="15_4i2k8"]
 [ext_resource type="Texture2D" uid="uid://bjwbvj220jkhh" path="res://Assests/Images/SCP 017/15AFuse.png" id="16"]
 [ext_resource type="Texture2D" uid="uid://bkl6xxiooksn6" path="res://Assests/Images/SCP 017/20AFuse.png" id="17"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jgpi2"]
+radius = 52.0
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("4")
@@ -90,6 +96,27 @@ offset_bottom = 185.357
 pivot_offset = Vector2(-475.641, 12.434)
 texture_normal = ExtResource("17")
 
+[node name="DialBase" type="TextureRect" parent="."]
+offset_left = 510.0
+offset_top = 268.0
+offset_right = 660.0
+offset_bottom = 418.0
+texture = ExtResource("14_aab6k")
+
+[node name="Dial" type="StaticBody2D" parent="DialBase"]
+input_pickable = true
+script = ExtResource("15_0t3l6")
+
+[node name="DialImage" type="TextureRect" parent="DialBase/Dial"]
+offset_right = 150.0
+offset_bottom = 150.0
+pivot_offset = Vector2(75, 75)
+texture = ExtResource("15_4i2k8")
+
+[node name="DialArea" type="CollisionShape2D" parent="DialBase/Dial"]
+position = Vector2(75, 81)
+shape = SubResource("CircleShape2D_jgpi2")
+
 [connection signal="mouse_entered" from="CamerasButton" to="CamerasButton" method="_on_CamerasButton_mouse_entered"]
 [connection signal="mouse_exited" from="CamerasButton" to="CamerasButton" method="_on_CamerasButton_mouse_exited"]
 [connection signal="button_down" from="AcidLever" to="AcidLever" method="_on_AcidLever_button_down"]
@@ -100,3 +127,4 @@ texture_normal = ExtResource("17")
 [connection signal="pressed" from="FuseDrawer/10AFuse" to="FuseDrawer" method="_on_10AFuse_pressed"]
 [connection signal="pressed" from="FuseDrawer/15AFuse" to="FuseDrawer" method="_on_15AFuse_pressed"]
 [connection signal="pressed" from="FuseDrawer/20AFuse" to="FuseDrawer" method="_on_20AFuse_pressed"]
+[connection signal="input_event" from="DialBase/Dial" to="DialBase/Dial" method="_on_input_event"]
