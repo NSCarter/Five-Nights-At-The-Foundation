@@ -22,4 +22,5 @@ var fuses = [Fuse.new("res://Assests/Images/SCP 017/Fuse1.png",39.781,12.449, li
 				Fuse.new("res://Assests/Images/SCP 017/Fuse2.png",39.781,62, lights[1]),
 				Fuse.new("res://Assests/Images/SCP 017/Fuse3.png",40.724,107.775, lights[2]),
 				Fuse.new("res://Assests/Images/SCP 017/Fuse4.png",40.724,152.607, lights[3])]
-			
+
+var dialRotation = 0
