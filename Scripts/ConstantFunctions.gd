@@ -18,3 +18,8 @@ func _process(delta):
 			Stats.lights[i].status = false
 			
 			Stats.lights[i].check_broken_lights()
+			
+	if (rng.randi_range(0, 250) == 1):
+		var num = rng.randi_range(1, 77)
+		Stats.invisibleRust += ["Rust%d" % num]
+	

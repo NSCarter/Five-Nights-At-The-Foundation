@@ -2,7 +2,7 @@ extends Node
 
 var night_started = false
 
-var selected_cam = "SCP 017"
+var selected_cam = "SCP 882"
 
 var cameras = ["SCP 682", "SCP 017", "SCP 882"]
 
@@ -24,3 +24,4 @@ var fuses = [Fuse.new("res://Assests/Images/SCP 017/Fuse1.png",39.781,12.449, li
 				Fuse.new("res://Assests/Images/SCP 017/Fuse4.png",40.724,152.607, lights[3])]
 
 var dialRotation = 0
+var invisibleRust = []
