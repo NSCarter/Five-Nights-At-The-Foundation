@@ -22,4 +22,6 @@ func _process(delta):
 	if (rng.randi_range(0, 250) == 1):
 		var num = rng.randi_range(1, 77)
 		Stats.invisibleRust += ["Rust%d" % num]
+		if Stats.invisibleRust.size() > 47:
+			print ("You lose :(")
 	
