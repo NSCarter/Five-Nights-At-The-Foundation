@@ -19,9 +19,14 @@ func _process(delta):
 			
 			Stats.lights[i].check_broken_lights()
 			
-	if (rng.randi_range(0, 250) == 1):
-		var num = rng.randi_range(1, 77)
-		Stats.invisibleRust += ["Rust%d" % num]
-		if Stats.invisibleRust.size() > 47:
-			print ("You lose :(")
+	if (Stats.dialRotation < 90):
+		if (rng.randi_range(0, 250) == 1):
+			var num = rng.randi_range(1, 77)
+			Stats.invisibleRust += ["Rust%d" % num]
+			if Stats.invisibleRust.size() > 47:
+				print ("You lose :(")
+	else:
+		if (rng.randi_range(0, 40) == 1):
+			var pos = rng.randi_range(0, Stats.invisibleRust.size() - 1)
+			Stats.invisibleRust.remove_at(pos)
 	
