@@ -19,6 +19,7 @@ config/icon="res://icon.png"
 
 Stats="*res://Scripts/Stats.gd"
 ConstantFunctions="*res://Scripts/ConstantFunctions.gd"
+Constants="*res://Scripts/Constants.gd"
 
 [display]
 

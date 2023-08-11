@@ -29,4 +29,6 @@ func _process(delta):
 		if (rng.randi_range(0, 40) == 1):
 			var pos = rng.randi_range(0, Stats.invisibleRust.size() - 1)
 			Stats.invisibleRust.remove_at(pos)
+			
+	Stats.remaining_water -= 1
 	

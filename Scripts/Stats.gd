@@ -25,3 +25,4 @@ var fuses = [Fuse.new("res://Assests/Images/SCP 017/Fuse1.png",39.781,12.449, li
 
 var dialRotation = 0
 var invisibleRust = []
+var remaining_water = Constants.STARTING_WATER

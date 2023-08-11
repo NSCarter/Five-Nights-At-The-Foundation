@@ -1,0 +1,1 @@
+const STARTING_WATER = 30000.0

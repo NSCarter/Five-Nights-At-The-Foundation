@@ -1,9 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://c6rd4jcycr3h7"]
+[gd_scene load_steps=4 format=3 uid="uid://c6rd4jcycr3h7"]
 
-[ext_resource type="Script" path="res://Scenes/SCP 882.gd" id="1_3tevt"]
+[ext_resource type="Script" path="res://Scripts/SCP 882.gd" id="1_2va37"]
+[ext_resource type="Texture2D" uid="uid://c284e56fqd1dl" path="res://Assests/Images/SCP 882/WaterLevelOver.png" id="2_er0p5"]
+[ext_resource type="Texture2D" uid="uid://nvmyg3tpuva1" path="res://Assests/Images/SCP 882/WaterLevelProgress.png" id="3_33xot"]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_3tevt")
+script = ExtResource("1_2va37")
 
 [node name="Rust1" type="ColorRect" parent="."]
 offset_right = 100.0
@@ -525,3 +527,13 @@ offset_top = 576.0
 offset_right = 676.0
 offset_bottom = 676.0
 color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="RemainingWater" type="TextureProgressBar" parent="."]
+offset_left = 896.0
+offset_top = 40.0
+offset_right = 986.0
+offset_bottom = 340.0
+value = 100.0
+fill_mode = 3
+texture_over = ExtResource("2_er0p5")
+texture_progress = ExtResource("3_33xot")
