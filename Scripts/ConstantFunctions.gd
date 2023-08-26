@@ -30,5 +30,4 @@ func _process(delta):
 			var pos = rng.randi_range(0, Stats.invisibleRust.size() - 1)
 			Stats.invisibleRust.remove_at(pos)
 			
-	Stats.remaining_water -= 1
-	
+	Stats.remaining_water -= pow(((Stats.dialRotation + 90.0) / 180.0) + 0.6, 3.0)
