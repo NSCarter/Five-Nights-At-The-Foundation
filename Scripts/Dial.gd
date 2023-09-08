@@ -2,6 +2,9 @@ extends StaticBody2D
 
 var pressed = false
 
+func _ready():
+	ConstantFunctions.dial_rotation_changed.connect(_dial_rotation_changed)
+
 func _enter_tree():
 	$DialImage.rotation_degrees = Stats.dialRotation
 
@@ -27,5 +30,12 @@ func _input(event):
 					$DialImage.rotation_degrees = -90
 				Stats.dialRotation = $DialImage.rotation_degrees
 					
-		if $DialImage.rotation_degrees < -19.8:
+		_check_dial_percent()
+		
+func _dial_rotation_changed():
+	$DialImage.rotation_degrees = Stats.dialRotation
+	_check_dial_percent()
+
+func _check_dial_percent():
+	if $DialImage.rotation_degrees < -19.8:
 			print("You lose! :()")

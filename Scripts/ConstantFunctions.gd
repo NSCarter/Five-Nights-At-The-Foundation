@@ -4,6 +4,8 @@ var rng = RandomNumberGenerator.new()
 
 var acid_min_line = 518
 
+signal dial_rotation_changed
+
 func _ready():
 	rng.randomize()
 
@@ -24,10 +26,14 @@ func _process(delta):
 			var num = rng.randi_range(1, 77)
 			Stats.invisibleRust += ["Rust%d" % num]
 			if Stats.invisibleRust.size() > 47:
-				print ("You lose :(")
+				print ("You lose :( (882)")
 	else:
 		if (rng.randi_range(0, 40) == 1):
 			var pos = rng.randi_range(0, Stats.invisibleRust.size() - 1)
 			Stats.invisibleRust.remove_at(pos)
 			
 	Stats.remaining_water -= pow(((Stats.dialRotation + 90.0) / 180.0) + 0.6, 3.0)
+	
+	if (Stats.remaining_water <= 0):
+		Stats.dialRotation -= 1
+		emit_signal('dial_rotation_changed')
