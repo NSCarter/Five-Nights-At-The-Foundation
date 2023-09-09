@@ -20,12 +20,12 @@ func _input(event):
 				
 		if event is InputEventMouseMotion:
 			if event.relative.x > 0:
-				$DialImage.rotation_degrees += 2
+				$DialImage.rotation_degrees += 4
 				if $DialImage.rotation_degrees > 90:
 					$DialImage.rotation_degrees = 90
 				Stats.dialRotation = $DialImage.rotation_degrees
 			if event.relative.x < 0:
-				$DialImage.rotation_degrees -= 2
+				$DialImage.rotation_degrees -= 4
 				if $DialImage.rotation_degrees < -90:
 					$DialImage.rotation_degrees = -90
 				Stats.dialRotation = $DialImage.rotation_degrees
