@@ -37,5 +37,5 @@ func _process(delta):
 	Stats.remaining_water -= pow(((Stats.dialRotation + 90.0) / 180.0) + 0.6, 3.0)
 	
 	if (Stats.remaining_water <= 0):
-		Stats.dialRotation -= 1
+		Stats.dialRotation -= 0.1
 		emit_signal('dial_rotation_changed')

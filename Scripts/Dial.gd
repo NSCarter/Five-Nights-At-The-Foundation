@@ -13,6 +13,9 @@ func _on_input_event(viewport, event, shape_idx):
 		pressed = event.pressed
 
 func _input(event):
+	if Stats.remaining_water <= 0:
+		return
+		
 	if pressed:
 		if event is InputEventMouseButton:
 			if not event.pressed:
