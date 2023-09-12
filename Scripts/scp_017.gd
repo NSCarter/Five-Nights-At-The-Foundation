@@ -1,5 +1,6 @@
 extends Node2D
 
+
 func _ready():
 	for i in 4:
 		var node = TextureRect.new()

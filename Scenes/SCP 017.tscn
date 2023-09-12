@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://kkv1wpsw8lmr"]
 
-[ext_resource type="Script" path="res://Scripts/SCP 017.gd" id="2"]
+[ext_resource type="Script" path="res://Scripts/scp_017.gd" id="1_8bgh4"]
 
 [node name="SCP 017" type="Node2D"]
-script = ExtResource("2")
+script = ExtResource("1_8bgh4")
 
 [node name="Panel" type="Panel" parent="."]
 offset_left = 507.0

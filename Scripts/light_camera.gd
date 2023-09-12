@@ -1,6 +1,6 @@
+class_name LightCamera
 extends Node
 
-class_name LightCamera
 
 var textureOn: String
 var textureOff: String
@@ -16,8 +16,10 @@ func _init(texture:String,posX:int,posY:int):
 	self.posY = posY
 	status = true
 
+
 func check_broken_lights():
 	var broken_lights = 0
+	
 	for light in Stats.lights:
 		if not light.status:
 			broken_lights += 1

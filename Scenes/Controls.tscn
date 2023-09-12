@@ -1,19 +1,19 @@
 [gd_scene load_steps=18 format=3 uid="uid://brpepnootf6mt"]
 
-[ext_resource type="Script" path="res://Scripts/CamerasButton.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/controls.gd" id="1_rsysa"]
 [ext_resource type="Texture2D" uid="uid://n6r7i7t38qjk" path="res://Assests/Images/SCP 682/AcidLeverDown.png" id="2"]
+[ext_resource type="Script" path="res://Scripts/cameras_button.gd" id="2_yc7y3"]
 [ext_resource type="Texture2D" uid="uid://baotaqsuc44" path="res://Assests/Images/SCP 682/AcidLeverUp.png" id="3"]
-[ext_resource type="Script" path="res://Scripts/Controls.gd" id="4"]
-[ext_resource type="Script" path="res://Scripts/AcidLever.gd" id="5"]
+[ext_resource type="Script" path="res://Scripts/acid_lever.gd" id="5_o7akw"]
 [ext_resource type="Texture2D" uid="uid://6t4eqekp4ibf" path="res://Assests/Images/SCP 017/FuseBoxClosed.png" id="6"]
-[ext_resource type="Script" path="res://Scripts/FuseBox.gd" id="11"]
+[ext_resource type="Script" path="res://Scripts/fuse_box.gd" id="7_m8nsk"]
+[ext_resource type="Script" path="res://Scripts/fuse_drawer.gd" id="9_qwh12"]
 [ext_resource type="Texture2D" uid="uid://2du767wyr1w6" path="res://Assests/Images/SCP 017/DrawerClosed.png" id="12"]
-[ext_resource type="Script" path="res://Scripts/FuseDrawer.gd" id="13"]
 [ext_resource type="Texture2D" uid="uid://btw4hh3d3n0y5" path="res://Assests/Images/SCP 017/10AFuse.png" id="14"]
 [ext_resource type="Texture2D" uid="uid://caskthudi3s4k" path="res://Assests/Images/SCP 882/DialBase.png" id="14_aab6k"]
 [ext_resource type="Texture2D" uid="uid://bspmp2nmu0o2d" path="res://Assests/Images/SCP 017/5AFuse.png" id="15"]
-[ext_resource type="Script" path="res://Scripts/Dial.gd" id="15_0t3l6"]
 [ext_resource type="Texture2D" uid="uid://ovm3ypt8n1u5" path="res://Assests/Images/SCP 882/Dial.png" id="15_4i2k8"]
+[ext_resource type="Script" path="res://Scripts/dial.gd" id="15_8a4x2"]
 [ext_resource type="Texture2D" uid="uid://bjwbvj220jkhh" path="res://Assests/Images/SCP 017/15AFuse.png" id="16"]
 [ext_resource type="Texture2D" uid="uid://bkl6xxiooksn6" path="res://Assests/Images/SCP 017/20AFuse.png" id="17"]
 
@@ -21,14 +21,14 @@
 radius = 52.0
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("4")
+script = ExtResource("1_rsysa")
 
 [node name="CamerasButton" type="Button" parent="."]
 offset_left = 59.0
 offset_top = 484.0
 offset_right = 960.0
 offset_bottom = 577.0
-script = ExtResource("1")
+script = ExtResource("2_yc7y3")
 
 [node name="AcidLever" type="TextureButton" parent="."]
 offset_left = 749.0
@@ -37,7 +37,7 @@ offset_right = 869.0
 offset_bottom = 390.0
 texture_normal = ExtResource("3")
 texture_pressed = ExtResource("2")
-script = ExtResource("5")
+script = ExtResource("5_o7akw")
 
 [node name="FuseBox" type="TextureButton" parent="."]
 offset_left = 96.0
@@ -46,7 +46,7 @@ offset_right = 222.0
 offset_bottom = 420.0
 toggle_mode = true
 texture_normal = ExtResource("6")
-script = ExtResource("11")
+script = ExtResource("7_m8nsk")
 
 [node name="FuseDrawer" type="TextureButton" parent="."]
 offset_left = 285.995
@@ -54,7 +54,7 @@ offset_top = 252.015
 offset_right = 435.995
 offset_bottom = 452.015
 texture_normal = ExtResource("12")
-script = ExtResource("13")
+script = ExtResource("9_qwh12")
 
 [node name="5AFuse" type="TextureButton" parent="FuseDrawer"]
 visible = false
@@ -105,7 +105,7 @@ texture = ExtResource("14_aab6k")
 
 [node name="Dial" type="StaticBody2D" parent="DialBase"]
 input_pickable = true
-script = ExtResource("15_0t3l6")
+script = ExtResource("15_8a4x2")
 
 [node name="DialImage" type="TextureRect" parent="DialBase/Dial"]
 offset_right = 150.0
