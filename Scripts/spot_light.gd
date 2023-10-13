@@ -1,19 +1,19 @@
-class_name LightCamera
+class_name SpotLight
 extends Node
 
 
 var textureOn: String
 var textureOff: String
-var posX: int
-var posY: int
+var x_pos: int
+var y_pos: int
 var status: bool
 var node: TextureRect
 
 func _init(texture:String,posX:int,posY:int):
 	self.textureOn = texture
 	self.textureOff = "res://Assests/Images/SCP 017/LightOff.png"
-	self.posX = posX
-	self.posY = posY
+	self.x_pos = posX
+	self.y_pos = posY
 	status = true
 
 

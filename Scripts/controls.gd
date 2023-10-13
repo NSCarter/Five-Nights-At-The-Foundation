@@ -9,8 +9,8 @@ func _ready():
 		$FuseDrawer.visible = false
 	else:
 		if Stats.drawer_open:
-			$FuseDrawer.openDrawer()
+			$FuseDrawer.open_drawer()
 		if Stats.fuse_box_open:
-			$FuseBox.openFuseBox()
+			$FuseBox.open_fuse_box()
 	if not("SCP 882" in Stats.CAMERAS):
 		$DialBase.visible = false

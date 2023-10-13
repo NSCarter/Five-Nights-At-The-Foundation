@@ -16,11 +16,11 @@ func _ready():
 			_change_camera(Stats.selected_cam)
 
 
-func _change_camera(name):
+func _change_camera(scp):
 	_remove_child_node()
-	var cam = load("Scenes/%s.tscn" % name).instantiate()
+	var cam = load("Scenes/%s.tscn" % scp).instantiate()
 	$"../SelectedCam".add_child(cam)
-	Stats.selected_cam = name
+	Stats.selected_cam = scp
 	
 	
 func _remove_child_node():

@@ -5,8 +5,8 @@ func _ready():
 	for i in 4:
 		var node = TextureRect.new()
 		var light = Stats.lights[i]
-		node.position.x = light.posX
-		node.position.y = light.posY
+		node.position.x = light.x_pos
+		node.position.y = light.y_pos
 		if light.status:
 			node.texture = load(light.textureOn)
 		else:

@@ -3,7 +3,7 @@ extends TextureButton
 
 var _lever_down = false
 
-func _process(delta):
+func _process(_delta):
 	if _lever_down:
 		Stats.acid_pos -= 1
 

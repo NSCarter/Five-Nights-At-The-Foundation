@@ -1,31 +1,31 @@
 extends TextureButton
 
 
-func _on_FuseBox_pressed():
-	if Stats.fuse_box_open:
-		_close_fuse_box()
-	else:
-		_open_fuse_box()
-		
-	Stats.fuse_box_open = not Stats.fuse_box_open
-
-
-func _open_fuse_box():
+func open_fuse_box():
 	self.texture_normal = load("res://Assests/Images/SCP 017/FuseBoxOpened.png")
 	
 	for i in 4:
 		var node = TextureButton.new()
 		var fuse = Stats.fuses[i]
-		node.position.x = fuse.pos_x
-		node.position.y = fuse.pos_y
+		node.position.x = fuse.x_pos
+		node.position.y = fuse.y_pos
 		node.connect("pressed", Callable(self,"_on_Fuse_pressed").bind(fuse))
 		
 		if fuse.status:
-			node.texture_normal = load(fuse.texture)
+			node.texture_normal = load(fuse.texture_filled)
 		else:
 			node.texture_normal = load(fuse.texture_empty)
 		fuse.node = node
 		self.add_child(node)
+
+
+func _on_FuseBox_pressed():
+	if Stats.fuse_box_open:
+		_close_fuse_box()
+	else:
+		open_fuse_box()
+		
+	Stats.fuse_box_open = not Stats.fuse_box_open
 
 
 func _close_fuse_box():
@@ -46,19 +46,19 @@ func _on_Fuse_pressed(fuse):
 func _fuse_removed(fuse):
 	fuse.node.texture_normal = load(fuse.texture_empty)
 	fuse.status = false
-	fuse.light.status = false
+	fuse.spot_light.status = false
 	
-	fuse.light.check_broken_lights()
+	fuse.spot_light.check_broken_lights()
 
 
 func _fuse_replaced(fuse):
 	if Stats.hand == "":
 		return
 		
-	fuse.node.texture_normal = load(fuse.texture)
+	fuse.node.texture_normal = load(fuse.texture_filled)
 	
 	if Stats.hand == "15AFuse":
-		fuse.light.status = true
+		fuse.spot_light.status = true
 		
 	Stats.hand = ""
 	fuse.status = true

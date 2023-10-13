@@ -11,7 +11,7 @@ func _ready():
 	_rng.randomize()
 
 
-func _process(delta):
+func _process(_delta):
 	Stats.acid_pos += 0.099
 	
 	if Stats.acid_pos > ACID_MIN_LINE:
