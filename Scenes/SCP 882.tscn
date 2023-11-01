@@ -1,10 +1,539 @@
-[gd_scene format=2]
+[gd_scene load_steps=4 format=3 uid="uid://c6rd4jcycr3h7"]
+
+[ext_resource type="Script" path="res://Scripts/scp_882.gd" id="1_gcj2p"]
+[ext_resource type="Texture2D" uid="uid://c284e56fqd1dl" path="res://Assests/Images/SCP 882/WaterLevelOver.png" id="2_er0p5"]
+[ext_resource type="Texture2D" uid="uid://nvmyg3tpuva1" path="res://Assests/Images/SCP 882/WaterLevelProgress.png" id="3_33xot"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_gcj2p")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 340.0
-offset_top = 195.0
-offset_right = 844.0
-offset_bottom = 463.0
-text = "SCP 882"
+[node name="Rust1" type="ColorRect" parent="."]
+offset_right = 100.0
+offset_bottom = 100.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust2" type="ColorRect" parent="."]
+offset_left = 480.0
+offset_right = 580.0
+offset_bottom = 100.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust3" type="ColorRect" parent="."]
+offset_left = 384.0
+offset_right = 484.0
+offset_bottom = 100.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust4" type="ColorRect" parent="."]
+offset_left = 288.0
+offset_right = 388.0
+offset_bottom = 100.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust5" type="ColorRect" parent="."]
+offset_left = 192.0
+offset_right = 292.0
+offset_bottom = 100.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust7" type="ColorRect" parent="."]
+offset_left = 96.0
+offset_right = 196.0
+offset_bottom = 100.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust8" type="ColorRect" parent="."]
+offset_left = 960.0
+offset_right = 1060.0
+offset_bottom = 100.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust9" type="ColorRect" parent="."]
+offset_left = 864.0
+offset_right = 964.0
+offset_bottom = 100.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust10" type="ColorRect" parent="."]
+offset_left = 768.0
+offset_right = 868.0
+offset_bottom = 100.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust11" type="ColorRect" parent="."]
+offset_left = 672.0
+offset_right = 772.0
+offset_bottom = 100.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust12" type="ColorRect" parent="."]
+offset_left = 576.0
+offset_right = 676.0
+offset_bottom = 100.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust13" type="ColorRect" parent="."]
+offset_top = 96.0
+offset_right = 100.0
+offset_bottom = 196.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust14" type="ColorRect" parent="."]
+offset_left = 480.0
+offset_top = 96.0
+offset_right = 580.0
+offset_bottom = 196.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust15" type="ColorRect" parent="."]
+offset_left = 384.0
+offset_top = 96.0
+offset_right = 484.0
+offset_bottom = 196.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust16" type="ColorRect" parent="."]
+offset_left = 288.0
+offset_top = 96.0
+offset_right = 388.0
+offset_bottom = 196.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust17" type="ColorRect" parent="."]
+offset_left = 192.0
+offset_top = 96.0
+offset_right = 292.0
+offset_bottom = 196.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust19" type="ColorRect" parent="."]
+offset_left = 96.0
+offset_top = 96.0
+offset_right = 196.0
+offset_bottom = 196.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust20" type="ColorRect" parent="."]
+offset_left = 960.0
+offset_top = 96.0
+offset_right = 1060.0
+offset_bottom = 196.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust21" type="ColorRect" parent="."]
+offset_left = 864.0
+offset_top = 96.0
+offset_right = 964.0
+offset_bottom = 196.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust22" type="ColorRect" parent="."]
+offset_left = 768.0
+offset_top = 96.0
+offset_right = 868.0
+offset_bottom = 196.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust23" type="ColorRect" parent="."]
+offset_left = 672.0
+offset_top = 96.0
+offset_right = 772.0
+offset_bottom = 196.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust24" type="ColorRect" parent="."]
+offset_left = 576.0
+offset_top = 96.0
+offset_right = 676.0
+offset_bottom = 196.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust25" type="ColorRect" parent="."]
+offset_top = 192.0
+offset_right = 100.0
+offset_bottom = 292.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust26" type="ColorRect" parent="."]
+offset_left = 480.0
+offset_top = 192.0
+offset_right = 580.0
+offset_bottom = 292.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust27" type="ColorRect" parent="."]
+offset_left = 384.0
+offset_top = 192.0
+offset_right = 484.0
+offset_bottom = 292.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust28" type="ColorRect" parent="."]
+offset_left = 288.0
+offset_top = 192.0
+offset_right = 388.0
+offset_bottom = 292.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust29" type="ColorRect" parent="."]
+offset_left = 192.0
+offset_top = 192.0
+offset_right = 292.0
+offset_bottom = 292.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust31" type="ColorRect" parent="."]
+offset_left = 96.0
+offset_top = 192.0
+offset_right = 196.0
+offset_bottom = 292.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust32" type="ColorRect" parent="."]
+offset_left = 960.0
+offset_top = 192.0
+offset_right = 1060.0
+offset_bottom = 292.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust33" type="ColorRect" parent="."]
+offset_left = 864.0
+offset_top = 192.0
+offset_right = 964.0
+offset_bottom = 292.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust34" type="ColorRect" parent="."]
+offset_left = 768.0
+offset_top = 192.0
+offset_right = 868.0
+offset_bottom = 292.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust35" type="ColorRect" parent="."]
+offset_left = 672.0
+offset_top = 192.0
+offset_right = 772.0
+offset_bottom = 292.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust36" type="ColorRect" parent="."]
+offset_left = 576.0
+offset_top = 192.0
+offset_right = 676.0
+offset_bottom = 292.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust37" type="ColorRect" parent="."]
+offset_top = 288.0
+offset_right = 100.0
+offset_bottom = 388.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust38" type="ColorRect" parent="."]
+offset_left = 480.0
+offset_top = 288.0
+offset_right = 580.0
+offset_bottom = 388.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust39" type="ColorRect" parent="."]
+offset_left = 384.0
+offset_top = 288.0
+offset_right = 484.0
+offset_bottom = 388.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust40" type="ColorRect" parent="."]
+offset_left = 288.0
+offset_top = 288.0
+offset_right = 388.0
+offset_bottom = 388.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust41" type="ColorRect" parent="."]
+offset_left = 192.0
+offset_top = 288.0
+offset_right = 292.0
+offset_bottom = 388.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust43" type="ColorRect" parent="."]
+offset_left = 96.0
+offset_top = 288.0
+offset_right = 196.0
+offset_bottom = 388.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust44" type="ColorRect" parent="."]
+offset_left = 960.0
+offset_top = 288.0
+offset_right = 1060.0
+offset_bottom = 388.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust45" type="ColorRect" parent="."]
+offset_left = 864.0
+offset_top = 288.0
+offset_right = 964.0
+offset_bottom = 388.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust46" type="ColorRect" parent="."]
+offset_left = 768.0
+offset_top = 288.0
+offset_right = 868.0
+offset_bottom = 388.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust47" type="ColorRect" parent="."]
+offset_left = 672.0
+offset_top = 288.0
+offset_right = 772.0
+offset_bottom = 388.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust48" type="ColorRect" parent="."]
+offset_left = 576.0
+offset_top = 288.0
+offset_right = 676.0
+offset_bottom = 388.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust49" type="ColorRect" parent="."]
+offset_top = 384.0
+offset_right = 100.0
+offset_bottom = 484.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust50" type="ColorRect" parent="."]
+offset_left = 480.0
+offset_top = 384.0
+offset_right = 580.0
+offset_bottom = 484.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust51" type="ColorRect" parent="."]
+offset_left = 384.0
+offset_top = 384.0
+offset_right = 484.0
+offset_bottom = 484.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust52" type="ColorRect" parent="."]
+offset_left = 288.0
+offset_top = 384.0
+offset_right = 388.0
+offset_bottom = 484.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust53" type="ColorRect" parent="."]
+offset_left = 192.0
+offset_top = 384.0
+offset_right = 292.0
+offset_bottom = 484.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust54" type="ColorRect" parent="."]
+offset_left = 96.0
+offset_top = 384.0
+offset_right = 196.0
+offset_bottom = 484.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust56" type="ColorRect" parent="."]
+offset_left = 960.0
+offset_top = 384.0
+offset_right = 1060.0
+offset_bottom = 484.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust57" type="ColorRect" parent="."]
+offset_left = 864.0
+offset_top = 384.0
+offset_right = 964.0
+offset_bottom = 484.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust58" type="ColorRect" parent="."]
+offset_left = 768.0
+offset_top = 384.0
+offset_right = 868.0
+offset_bottom = 484.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust59" type="ColorRect" parent="."]
+offset_left = 672.0
+offset_top = 384.0
+offset_right = 772.0
+offset_bottom = 484.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust60" type="ColorRect" parent="."]
+offset_left = 576.0
+offset_top = 384.0
+offset_right = 676.0
+offset_bottom = 484.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust61" type="ColorRect" parent="."]
+offset_top = 480.0
+offset_right = 100.0
+offset_bottom = 580.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust62" type="ColorRect" parent="."]
+offset_left = 480.0
+offset_top = 480.0
+offset_right = 580.0
+offset_bottom = 580.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust63" type="ColorRect" parent="."]
+offset_left = 384.0
+offset_top = 480.0
+offset_right = 484.0
+offset_bottom = 580.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust64" type="ColorRect" parent="."]
+offset_left = 288.0
+offset_top = 480.0
+offset_right = 388.0
+offset_bottom = 580.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust65" type="ColorRect" parent="."]
+offset_left = 192.0
+offset_top = 480.0
+offset_right = 292.0
+offset_bottom = 580.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust67" type="ColorRect" parent="."]
+offset_left = 96.0
+offset_top = 480.0
+offset_right = 196.0
+offset_bottom = 580.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust68" type="ColorRect" parent="."]
+offset_left = 960.0
+offset_top = 480.0
+offset_right = 1060.0
+offset_bottom = 580.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust69" type="ColorRect" parent="."]
+offset_left = 864.0
+offset_top = 480.0
+offset_right = 964.0
+offset_bottom = 580.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust70" type="ColorRect" parent="."]
+offset_left = 768.0
+offset_top = 480.0
+offset_right = 868.0
+offset_bottom = 580.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust71" type="ColorRect" parent="."]
+offset_left = 672.0
+offset_top = 480.0
+offset_right = 772.0
+offset_bottom = 580.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust72" type="ColorRect" parent="."]
+offset_left = 576.0
+offset_top = 480.0
+offset_right = 676.0
+offset_bottom = 580.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust73" type="ColorRect" parent="."]
+offset_top = 576.0
+offset_right = 100.0
+offset_bottom = 676.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust74" type="ColorRect" parent="."]
+offset_left = 480.0
+offset_top = 576.0
+offset_right = 580.0
+offset_bottom = 676.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust75" type="ColorRect" parent="."]
+offset_left = 384.0
+offset_top = 576.0
+offset_right = 484.0
+offset_bottom = 676.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust76" type="ColorRect" parent="."]
+offset_left = 288.0
+offset_top = 576.0
+offset_right = 388.0
+offset_bottom = 676.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust77" type="ColorRect" parent="."]
+offset_left = 192.0
+offset_top = 576.0
+offset_right = 292.0
+offset_bottom = 676.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust66" type="ColorRect" parent="."]
+offset_left = 96.0
+offset_top = 576.0
+offset_right = 196.0
+offset_bottom = 676.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust55" type="ColorRect" parent="."]
+offset_left = 960.0
+offset_top = 576.0
+offset_right = 1060.0
+offset_bottom = 676.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust42" type="ColorRect" parent="."]
+offset_left = 864.0
+offset_top = 576.0
+offset_right = 964.0
+offset_bottom = 676.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust30" type="ColorRect" parent="."]
+offset_left = 768.0
+offset_top = 576.0
+offset_right = 868.0
+offset_bottom = 676.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust18" type="ColorRect" parent="."]
+offset_left = 672.0
+offset_top = 576.0
+offset_right = 772.0
+offset_bottom = 676.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="Rust6" type="ColorRect" parent="."]
+offset_left = 576.0
+offset_top = 576.0
+offset_right = 676.0
+offset_bottom = 676.0
+color = Color(0.639216, 0.141176, 0.141176, 1)
+
+[node name="RemainingWater" type="TextureProgressBar" parent="."]
+offset_left = 896.0
+offset_top = 40.0
+offset_right = 986.0
+offset_bottom = 340.0
+value = 100.0
+fill_mode = 3
+texture_over = ExtResource("2_er0p5")
+texture_progress = ExtResource("3_33xot")
