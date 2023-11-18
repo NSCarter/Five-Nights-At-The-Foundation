@@ -2,6 +2,7 @@ extends Node
 
 
 const CAMERAS = ["SCP 682", "SCP 017", "SCP 882"]
+const SCPS = ["SCP 682", "SCP 017", "SCP 882", "SCP 2992"]
 
 var night_started = false
 var selected_cam = "SCP 882"

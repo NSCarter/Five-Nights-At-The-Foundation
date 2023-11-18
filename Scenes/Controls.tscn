@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://brpepnootf6mt"]
+[gd_scene load_steps=19 format=3 uid="uid://brpepnootf6mt"]
 
 [ext_resource type="Script" path="res://Scripts/controls.gd" id="1_rsysa"]
 [ext_resource type="Texture2D" uid="uid://n6r7i7t38qjk" path="res://Assests/Images/SCP 682/AcidLeverDown.png" id="2"]
@@ -16,6 +16,7 @@
 [ext_resource type="Script" path="res://Scripts/dial.gd" id="15_8a4x2"]
 [ext_resource type="Texture2D" uid="uid://bjwbvj220jkhh" path="res://Assests/Images/SCP 017/15AFuse.png" id="16"]
 [ext_resource type="Texture2D" uid="uid://bkl6xxiooksn6" path="res://Assests/Images/SCP 017/20AFuse.png" id="17"]
+[ext_resource type="PackedScene" uid="uid://tafyjvbwc11c" path="res://Scenes/SCP 2992.tscn" id="17_deoto"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jgpi2"]
 radius = 52.0
@@ -116,6 +117,9 @@ texture = ExtResource("15_4i2k8")
 [node name="DialArea" type="CollisionShape2D" parent="DialBase/Dial"]
 position = Vector2(75, 81)
 shape = SubResource("CircleShape2D_jgpi2")
+
+[node name="Phone" parent="." instance=ExtResource("17_deoto")]
+position = Vector2(80, 24)
 
 [connection signal="mouse_entered" from="CamerasButton" to="CamerasButton" method="_on_CamerasButton_mouse_entered"]
 [connection signal="mouse_exited" from="CamerasButton" to="CamerasButton" method="_on_CamerasButton_mouse_exited"]
