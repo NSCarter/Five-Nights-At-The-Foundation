@@ -16,4 +16,3 @@ func _ready():
 		
 	self.move_child($Panel, 6)
 	self.move_child($Panel2, 5)
-
