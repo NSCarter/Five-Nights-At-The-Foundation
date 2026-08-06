@@ -7,6 +7,7 @@ func _ready():
 		var light = Stats.lights[i]
 		node.position.x = light.x_pos
 		node.position.y = light.y_pos
+		node.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		if light.status:
 			node.texture = load(light.textureOn)
 		else:

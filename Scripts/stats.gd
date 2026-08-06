@@ -5,7 +5,7 @@ const CAMERAS = ["SCP 682", "SCP 017", "SCP 882"]
 const SCPS = ["SCP 682", "SCP 017", "SCP 882", "SCP 2992"]
 
 var night_started = false
-var selected_cam = "SCP 882"
+var selected_cam = "SCP 682"
 var acid_pos = 200
 var hand = ""
 var fuse_box_open = false
@@ -21,3 +21,4 @@ var fuses = [Fuse.new("res://Assests/Images/SCP 017/Fuse1.png", 39.781, 12.449, 
 var dial_rotation = 0
 var invisible_rust = []
 var remaining_salt_water = Constants.STARTING_SALT_WATER
+var phoneRinging = false

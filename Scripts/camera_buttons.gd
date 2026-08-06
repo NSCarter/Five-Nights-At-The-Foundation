@@ -7,7 +7,7 @@ func _ready():
 		button.set_size(Vector2(125, 40))
 		button.custom_minimum_size = Vector2(0, 40)
 		button.text = Stats.CAMERAS[i]
-		button.connect("pressed",Callable(self,"_change_camera").bind(Stats.CAMERAS[i]))
+		button.connect("pressed", Callable(self,"_change_camera").bind(Stats.CAMERAS[i]))
 		button.show()
 		add_child(button)
 		

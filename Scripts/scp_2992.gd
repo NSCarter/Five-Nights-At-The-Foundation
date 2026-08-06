@@ -2,14 +2,10 @@ extends Node2D
 
 var phone_up = false
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+	randomize()
+	$Timer.wait_time = randi_range(30, 120)
+	$Timer.start()
 
 
 func _on_texture_button_pressed():
@@ -19,3 +15,9 @@ func _on_texture_button_pressed():
 		$Phone/Receiver.texture_normal = load("res://Assests/Images/SCP 2992/ReceiverUp.png")
 		
 	phone_up = !phone_up
+
+
+func _on_timer_timeout() -> void:
+	Stats.phoneRinging = true
+	$Timer.wait_time = randi_range(30, 120)
+	$Timer.start()

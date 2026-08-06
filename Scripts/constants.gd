@@ -1,1 +1,4 @@
+extends Node
+
+
 const STARTING_SALT_WATER = 30000.0

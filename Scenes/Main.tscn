@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bdxa7av8sc4ea"]
+
+[ext_resource type="Script" uid="uid://crfvwwd8l2otp" path="res://Scripts/main.gd" id="1_kln2b"]
+[ext_resource type="AudioStream" uid="uid://cir8kudsk26n4" path="res://Assests/Audio/PhoneRing.wav" id="3_rgh2o"]
+
+[node name="Main" type="Node2D" unique_id=922894960]
+script = ExtResource("1_kln2b")
+
+[node name="PhoneAudio" type="AudioStreamPlayer2D" parent="." unique_id=1625688235]
+position = Vector2(80, 24)
+stream = ExtResource("3_rgh2o")
+
+[node name="CamerasButton" type="Button" parent="." unique_id=674610555]
+z_index = 4096
+offset_left = 59.0
+offset_top = 484.0
+offset_right = 960.0
+offset_bottom = 577.0
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1041275293]
+
+[connection signal="finished" from="PhoneAudio" to="." method="_on_phone_audio_finished"]
+[connection signal="mouse_entered" from="CamerasButton" to="." method="_on_cameras_button_mouse_entered"]

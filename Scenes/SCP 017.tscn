@@ -1,16 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://kkv1wpsw8lmr"]
+[gd_scene format=3 uid="uid://kkv1wpsw8lmr"]
 
-[ext_resource type="Script" path="res://Scripts/scp_017.gd" id="1_8bgh4"]
+[ext_resource type="Script" uid="uid://bel16psnfn8yg" path="res://Scripts/scp_017.gd" id="1_8bgh4"]
 
-[node name="SCP 017" type="Node2D"]
+[node name="SCP 017" type="Node2D" unique_id=757304515]
 script = ExtResource("1_8bgh4")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Panel" type="Panel" parent="." unique_id=788639390]
 offset_left = 507.0
 offset_right = 517.0
 offset_bottom = 600.0
+mouse_filter = 2
 
-[node name="Panel2" type="Panel" parent="."]
+[node name="Panel2" type="Panel" parent="." unique_id=124745563]
 offset_top = 295.0
 offset_right = 1024.0
 offset_bottom = 305.0
+mouse_filter = 2
